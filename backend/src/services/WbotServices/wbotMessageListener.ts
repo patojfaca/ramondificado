@@ -115,6 +115,8 @@ let originalFilename = media.filename ? `-${media.filename}` : ''
 let ext;
   if (media.mimetype === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet') {
     ext = 'xlsx';
+  } else if (media.mimetype === 'application/vnd.ms-excel.octet-stream'){
+    ext = 'xls';
   } else if (media.mimetype === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'){
     ext = 'docx';
   } else if (media.mimetype === 'application/vnd.openxmlformats-officedocument.wordprocessingml.template'){
