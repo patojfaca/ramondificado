@@ -117,6 +117,8 @@ let ext;
     ext = 'xlsx';
   } else if (media.mimetype === 'application/vnd.ms-excel.octet-stream'){
     ext = 'xls';
+  } else if (media.mimetype === 'application/vnd.ms-excel'){
+    ext = 'xls';
   } else if (media.mimetype === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'){
     ext = 'docx';
   } else if (media.mimetype === 'application/vnd.openxmlformats-officedocument.wordprocessingml.template'){
